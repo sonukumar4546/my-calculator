@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>js</title>
+</head>
+<body style="background:black;">
+	<div style="width: 260px;height: 337px;margin-left:40%;border: px solid darkred;margin-top: 12%;border-radius: 5px;background: #a7bcb9;">
+		<br>
+		<h1 align="center" style="color: whitesmoke;color: black;">My Calculator</h1>
+			<br>
+	<input type="number" name="name" id="one" placeholder="input first number " style="width: 240px; height: 35px;color: black;font-size: 20px; border-radius: 5px;margin-left:2%;">
+		<br>
+	
+	<select id="two" class="sunday" style="margin-left:35%;" style="width: 25px;height: 25px;background: blue;color: black;">
+		<option value="+" >+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        
+
+		
+	</select>
+	<br>
+
+	<input type="number" name="name" id="four" placeholder="input second numer " style="width: 243px;height: 35px;color: black;font-size: 20px;border-radius: 5px;margin-left: 2%;">
+	<br>
+		<br>
+    <button onclick="cal()" style="width: 125px;height: 35px;margin-left: 55px;background: #9cd3d3;">calculate</button>
+    <br>
+        
+    <input type="text" name="answer" id="res" style="width: 243px; height: 35px;color: black;font-size: 20px;border-radius: 5px;margin-left: 2%;">
+    <script type="text/javascript">
+    	      function cal() {      
+             var opr1 =document.getElementById("one").value;
+             var opr2 =document.getElementById("four").value;
+             var ope  =document.getElementById("two").value; 
+             if  (ope == '+') {
+             	var res = parseInt(opr1) + parseInt(opr2);
+             }
+               if  (ope == '-') {
+             	var res = parseInt(opr1) - parseInt(opr2);
+             }
+               if  (ope == '*') {
+             	var res = parseInt(opr1) * parseInt(opr2);
+             }
+               if  (ope == '/') {
+             	var res = parseInt(opr1) / parseInt(opr2);
+             }
+               if  (ope == '%') {
+             	var res = parseInt(opr1) % parseInt(opr2);
+             }
+               document.getElementById("res").value=res;} </script></div></body>
+</html>
